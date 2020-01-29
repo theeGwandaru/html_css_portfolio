@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>dark-bank-dashboard-design</title>
+    <link rel="stylesheet" href="vendor/fontawesome-free-5.12.0-web/css/all.css" />
+    <link rel="stylesheet" href="vendor/chartist-js/chartist.min.css" />
+
+    <script src="vendor/chartist-js/chartist.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="humburger-menu">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="logo">
+                <img src="img/citi-logo-no-r.png" />
+            </div>
+            <div class="search-box">
+                <span> <i class="fas fa-search"></i></span>
+                <input type="text" placeholder="Search" />
+            </div>
+        </header>
+        <section id="balance-section">
+            <div id="current-balance-card" class="card">
+                <div class="card-body">
+                    <div id="balance-div">
+                        <span class="currency-symbol">$</span>
+                        <span class="balance-amount">25,685</span>
+                    </div>
+                    <small>Deposits: $12,000</small>
+                    <h5>+6.5%($680)</h5>
+                    <a class="btn btn-blue">
+                        <span>Add Funds</span>
+                    </a>
+                </div>
+            </div>
+            <div id="balance-history-card" class="card">
+                <div class="card-heading">
+                    <h6>Card Balance History</h6>
+                    <div id="time-period-pill">
+                        <span>Day</span>
+                        <span>Week</span>
+                        <span>Month</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div id="balance-cart-container">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="payments-section">
+            <div class="card">
+                <div class="card-header"> <i class="fas fa-exchange-alt"></i></div>
+                <div class="card-body">
+                    <h4>Transfer</h4>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-download"></i>
+                </div>
+                <div class="card-body">
+                    <h4>Withdraw</h4>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-home"></i>
+                </div>
+                <div class="card-body">
+                    <h4>Home</h4>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <div class="card-body">
+                    <h4>Electricity</h4>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-shopping-bag"></i>
+                </div>
+                <div class="card-body">
+                    <h4>Shopping</h4>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-globe-asia"></i>
+                </div>
+                <div class="card-body">
+                    <h4>Gas Bill</h4>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="card-body">
+                    <h4>Education</h4>
+                </div>
+            </div>
+            <div class="slider-right-button">
+                <i class="fas fa-angle-right"></i>
+            </div>
+        </section>
+
+        <section id="summary-shortcuts-offers">
+            <div id="breakdown" class="card">
+                <div class="card-header">
+                    <h6>Breakdown</h6>
+                </div>
+                <div id="breakdown-card" class="card-body">
+                    <div id="income">
+                        <div class="rounded-container blue">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <span>$</span>
+                        <span>24,685</span>
+                        <p>
+                            Income
+                        </p>
+                    </div>
+                    <div id="expense">
+                        <div  class="rounded-container red">
+                            <i class="fas fa-search-dollar"></i>
+                        </div>
+                        <span>$</span>
+                        <span>24,685</span>
+                        <p>
+                            Expense
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="send-money" class="card">
+                <div class="card-header">
+                    <h6>Send Money</h6>
+                </div>
+                <div class="card-body">
+                    <div class="send-money-list-entry-container">
+                        <span class="rounded-container"><img src="./img/citi-logo-no-r.png"/></span>
+                        <span>Dohn Hoodermin</span>
+                    </div>
+                    <div>
+                        <span class="rounded-container"></span><span>Hohn Smith</span>
+                    </div>
+                    <div>
+                        <span class="rounded-container"></span><span>Lebin Locker</span>
+                    </div>
+                    <div>
+                        <span class="rounded-container"></span><span>Add a New Member</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h6>Travel Loan</h6>
+                </div>
+                <div class="card-body">
+                    <p>
+                        People will Travel Anywhere for Good Food - it's Crazy
+                    </p>
+                    <button>Apply Now</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <aside>
+        <div class="header">
+            <span id="notification"></span>
+            <span id="profile-pic"><img /></span>
+        </div>
+        <div>
+            <h2>My Transactions</h2>
+            <div class="transaction-container">
+                <div class="trans-pro-pic"><img /></div>
+                <div class="trans-name-date">
+                    <span>Balen Karmer</span>
+                    <span>10 March</span>
+                </div>
+                <div>
+                    <span>$ 250.00</span>
+                </div>
+            </div>
+            <div class="transaction-container">
+                <div class="trans-pro-pic"><img /></div>
+                <div class="trans-name-date">
+                    <span>Slava Kornilov</span>
+                    <span>10 March</span>
+                </div>
+                <div>
+                    <span>$ 250.00</span>
+                </div>
+            </div>
+            <div class="transaction-container">
+                <div class="trans-pro-pic"><img /></div>
+                <div class="trans-name-date">
+                    <span>Kenny Coil</span>
+                    <span>10 March</span>
+                </div>
+                <div>
+                    <span>$ 250.00</span>
+                </div>
+            </div>
+            <div class="transaction-container">
+                <div class="trans-pro-pic"><img /></div>
+                <div class="trans-name-date">
+                    <span>Nathan Railey</span>
+                    <span>10 March</span>
+                </div>
+                <div>
+                    <span>$ 250.00</span>
+                </div>
+            </div>
+            <div class="transaction-container">
+                <div class="trans-pro-pic"><img /></div>
+                <div class="trans-name-date">
+                    <span>Thomas Karmer</span>
+                    <span>10 March</span>
+                </div>
+                <div>
+                    <span>$ 250.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="my-cards">
+            <div id="my-cards-header" class="">
+                <h1>My Cards</h1>
+                <div>+</div>
+            </div>
+            <div id="card-container">
+
+            </div>
+        </div>
+    </aside>
+    <script src="script/script.js"></script>
+</body>
+
+</html>

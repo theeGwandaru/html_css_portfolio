@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    color: white;
+}
+
+main {
+    background-color: #151517;
+    width: 70vw;
+    height: 200vh;
+    padding: 2% 5%;
+}
+
+main header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+main header div.humburger-menu {
+    margin-right: -30%;
+    vertical-align: middle;
+    padding-top: 20px;
+}
+
+main header div.humburger-menu span {
+    display: block;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    border-bottom-width: 2px;
+    width: 20px;
+    margin-bottom: 4px;
+}
+
+main header .logo {
+    /* margin-right: 30%; */
+}
+
+main header .search-box {
+    background-color: #202022;
+    padding-top: 8px;
+    padding-left: 20px;
+    border-radius: 1vh;
+}
+
+main header .search-box span {
+    display: inline-block;
+    color: white;
+    margin-right: 10px;
+}
+
+main header .search-box input {
+    background-color: #202022;
+    color: white;
+    height: 30px;
+    width: 28vw;
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+aside {
+    background-color: #1C1C1E;
+    width: 30vw;
+    height: 200vh;
+}
+
+section {
+    margin-top: 5vh;
+}
+
+main #balance-section {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: #202022;
+}
+
+.card .card-body {
+    margin: 10%;
+}
+
+main #balance-section .card {
+    height: 35vh;
+}
+
+main #balance-section #current-balance-card {
+    width: 28%;
+}
+
+main #balance-section #balance-history-card {
+    width: 70%;
+}
+
+.card .card-body #balance-div {
+    margin-top: 5vh;
+}
+
+#current-balance-card #balance-div span.currency-symbol {
+    font-size: 1em;
+    vertical-align: top;
+}
+
+#current-balance-card #balance-div span.balance-amount {
+    font-size: 2em;
+    vertical-align: middle;
+}
+
+#current-balance-card small {
+    font-size: 0.65em;
+}
+
+#current-balance-card .card-body h5 {
+    margin-top: 5vh;
+    color: #496CB7;
+}
+
+#current-balance-card .btn-blue {
+    display: block;
+    margin-top: 5vh;
+    background-color: #4C84FF;
+    border-color: #4C84FF;
+    height: 30px;
+    border-radius: 1vh;
+}
+
+#current-balance-card .btn-blue:hover {
+    cursor: pointer;
+}
+
+#current-balance-card .btn-blue span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10%;
+    margin-top: 5%;
+    font-size: 0.75em;
+}
+
+#current-balance-card .btn-blue span i {
+    display: inline-block;
+}
+
+
+#balance-history-card .card-heading {
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#balance-history-card .card-heading #time-period-pill {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -10px;
+}
+
+#balance-history-card .card-heading #time-period-pill span {
+    display: inline-block;
+    margin-right: 5%;
+    height: 100%;
+    width: 5vw;
+    text-align: center;
+    padding-top: 1%;
+    border-radius: 15%;
+    font-size: .75em;
+}
+
+#balance-history-card .card-heading #time-period-pill span:hover {
+    cursor: pointer;
+}
+
+#balance-history-card .card-heading #time-period-pill span:first-of-type {
+    background-color: #4C83FE;
+}
+
+.ct-label {
+    color: white;
+}
+
+#payments-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#payments-section .card {
+    height: 150px;
+    width: 100px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#payments-section .card:hover {
+    background-color: #40D675;
+}
+
+#payments-section .card .card-header {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#payments-section .card .card-header i {
+    font-size: 2em;
+}
+
+#payments-section .card .card-body {
+    margin-top: 40px
+}
+
+#summary-shortcuts-offers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#summary-shortcuts-offers .card {
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+}
+
+#summary-shortcuts-offers .card .card-header {
+    margin-top: 30px;
+    font-size: 1.5em;
+}
+
+#summary-shortcuts-offers .card #breakdown-card {
+    display: flex;
+    flex-direction: row;
+}
+
+#summary-shortcuts-offers .card .card-body div {
+    width: 100px;
+}
+
+#breakdown .card-body>div:first-of-type {
+    border-right-style: solid;
+    border-right-color: white;
+    border-right-width: 1px;
+    padding-right: 30px;
+}
+
+#breakdown .card-body>div:nth-of-type(2) {
+    padding-left: 43px;
+}
+
+#breakdown .card-body div.rounded-container {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    margin-bottom: 20px;
+}
+
+#breakdown .card-body div.rounded-container i {
+    font-size: 2em;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#breakdown .card-body div.rounded-container.blue {
+    background-color: #4B7BFB;
+}
+
+#breakdown .card-body div.rounded-container.red {
+    background-color: #FF504A;
+}
+
+#breakdown .card-body span:first-of-type {
+    font-size: 1em;
+    vertical-align: top;
+}
+
+#breakdown .card-body span {
+    font-size: 1.5em;
+}
+
+#breakdown p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+#income p {
+    color: #4C84FD;
+}
+
+#expense p {
+    color: #B95A58;
+}
+
+.send-money-list-entry-container {
+    width: 50px !important;
+}
+
+#send-money .card-body span.rounded-container {}
+
+#send-money .card-body span {
+    display: inline-block;
+    width: 10px;
+}
